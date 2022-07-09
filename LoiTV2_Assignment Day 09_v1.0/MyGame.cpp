@@ -1,7 +1,6 @@
 #include "MyGame.h"
-MyGame::MyGame(const string name,const char shortName,const int health,const int damage,const int gold){
+MyGame::MyGame(const string name,const int health,const int damage,const int gold){
     this-> name = name;
-    this-> shortName = shortName;
     this-> health = health;
     this-> damage = damage;
     this-> gold = gold;
@@ -14,14 +13,6 @@ string MyGame::getName()
 void MyGame::setName(const string &name)
 {
     this-> name = name;
-}
-char MyGame::getShortName()
-{
-    return this->shortName;
-}
-void MyGame::setShortName(const char &shortName)
-{
-    this->shortName= shortName;
 }
 short int MyGame::getHealth()
 {

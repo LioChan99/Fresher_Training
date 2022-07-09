@@ -1,8 +1,6 @@
 #include "Player.h"
 Player::Player()
 {
-    this-> setName("Loi");
-    this-> setShortName('L');
     this-> setHealth(10);
     this-> setDamage(1);
     this-> setGold(0);
@@ -18,12 +16,19 @@ void Player::setLevel(int level)
 }
 void Player::showFail()
 {
-    cout<<"You Failed!"<<endl;
+    cout<<"You got defeated!"<<endl;
     cout<<"Your Level: "<< level<<endl;
     cout<<"Your Gold: "<< getGold()<<endl;
 }
 void Player::showWin()
 {
-    cout<<"You Win!"<<endl;
+    cout<<"You Win! Congratulation!"<<endl;
     cout<<"Your Gold: "<< getGold()<<endl;  
+}
+void Player::setInfor()
+{
+    cout<<"Enter your name: "<<endl;
+    string name;
+    getline(cin,name);
+    Player::setName(name);
 }

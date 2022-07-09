@@ -1,5 +1,5 @@
 #include "Monster.h"
-Monster:: Monster(const string &name, const char &shortName, const int &health, const int &damage, const int &gold,const string &type ): MyGame(name, shortName, health, damage, gold)
+Monster:: Monster(const string &name, const int &health, const int &damage, const int &gold,const string &type ): MyGame(name, health, damage, gold)
 {
     this->type = type;
 }

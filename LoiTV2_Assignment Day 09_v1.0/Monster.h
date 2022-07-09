@@ -6,7 +6,7 @@ class Monster : public MyGame
     private:
        string type;
     public:
-       Monster(const string &name, const char &shortName, const int &health, const int &damage, const int &gold,const string &type );
+       Monster(const string &name, const int &health, const int &damage, const int &gold,const string &type );
        string getType();
        void setType(string type);
 };
